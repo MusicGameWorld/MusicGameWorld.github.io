@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <!--請勿更動此標籤(head)內容！這是網頁核心程式碼-->
+    <meta charset="utf-8" />
+    <title>規則</title>
+    <link rel="Shortcut Icon" type="image/x-icon" href="icon.ico"/>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+    <style type="text/css">
+        body {
+            -moz-user-select: none;
+            -webkit-user-select: none;
+        }
+    </style>
+    <script>
+    </script>
+</head>
+<body>
+    Test
+    <audio autoplay="autoplay" loop="loop" preload="auto" volume="0.1">
+        <source src="description.ogg" type="audio/ogg">
+        <source src="description.mp3" type="audio/mpeg">
+    </audio>
+        <!--請勿刪除下方JavaScript！這是防複製程式碼-->
+        <script type="text/javascript">
+            //<!--
+            function iEsc() { return false; }
+            function iRec() { return true; }
+            function DisableKeys() {
+                if (event.ctrlKey || event.shiftKey || event.altKey) {
+                    window.event.returnValue = false;
+                    iEsc();
+                }
+            }
+            document.ondragstart = iEsc;
+            document.onkeydown = DisableKeys;
+            document.oncontextmenu = iEsc;
+            if (typeof document.onselectstart != "undefined")
+                document.onselectstart = iEsc;
+            else {
+                document.onmousedown = iEsc;
+                document.onmouseup = iRec;
+            }
+            function DisableRightClick(qsyzDOTnet) {
+                if (window.Event) {
+                    if (qsyzDOTnet.which == 2 || qsyzDOTnet.which == 3)
+                        iEsc();
+                } else if (event.button == 2 || event.button == 3) {
+                    event.cancelBubble = true
+                    event.returnValue = false;
+                    iEsc();
+                }
+            }
+                    //-->
+        </script>
+</body>
+</html>
